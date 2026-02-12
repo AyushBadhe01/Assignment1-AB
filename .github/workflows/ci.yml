@@ -24,12 +24,12 @@ jobs:
 
       # 3. Build Product Service
       - name: Build Product Service
-        working-directory: ./product-service
+        working-directory: ./product_service/product-service
         run: mvn clean package -DskipTests
 
       # 4. Build Order Service
       - name: Build Order Service
-        working-directory: ./order-service
+        working-directory: ./order_service/order-service
         run: mvn clean package -DskipTests
 
   docker:
